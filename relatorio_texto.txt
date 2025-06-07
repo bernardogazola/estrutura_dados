@@ -1,0 +1,179 @@
+RELATÓRIO - ANÁLISE TABELA HASH
+
+MELHOR CONFIGURAÇÃO (Tempo de Inserção):
+- Implementação: Rehashing
+- Função Hash: DIVISAO
+- Tamanho Tabela: 1000
+- Tempo: 0.00 ms
+
+MÉDIAS POR IMPLEMENTAÇÃO:
+
+Rehashing:
+- Tempo médio inserção: 1547.85 ms (1.55 segundos)
+- Colisões médias: 24377
+- Tempo médio busca: 0.26 ms
+- Comparações médias: 7125.89
+
+Encadeamento:
+- Tempo médio inserção: 390470.67 ms (6.51 minutos)
+- Colisões médias: 8641254
+- Tempo médio busca: 0.11 ms
+- Comparações médias: 1922.21
+
+MÉDIAS POR FUNÇÃO HASH:
+
+DIVISAO:
+- Tempo médio total: 141119.17 ms (2.35 minutos)
+- Colisões médias: 4324083
+
+MULTIPLICACAO:
+- Tempo médio total: 310056.61 ms (5.17 minutos)
+- Colisões médias: 4324100
+
+DOBRAMENTO:
+- Tempo médio total: 136852.56 ms (2.28 minutos)
+- Colisões médias: 4350264
+
+MÉDIAS POR IMPLEMENTAÇÃO E FUNÇÃO HASH:
+
+Rehashing:
+  DIVISAO:
+  - Tempo médio inserção: 19.78 ms
+  - Colisões médias: 18499
+  - Tempo médio busca: 0.00 ms
+  - Comparações médias: 13.24
+  - Tempo médio total: 19.78 ms
+  MULTIPLICACAO:
+  - Tempo médio inserção: 19.78 ms
+  - Colisões médias: 18532
+  - Tempo médio busca: 0.00 ms
+  - Comparações médias: 20.33
+  - Tempo médio total: 19.78 ms
+  DOBRAMENTO:
+  - Tempo médio inserção: 4604.00 ms (4.60 segundos)
+  - Colisões médias: 36100
+  - Tempo médio busca: 0.78 ms
+  - Comparações médias: 21344.09
+  - Tempo médio total: 4604.78 ms (4.60 segundos)
+
+Encadeamento:
+  DIVISAO:
+  - Tempo médio inserção: 282218.56 ms (4.70 minutos)
+  - Colisões médias: 8629667
+  - Tempo médio busca: 0.00 ms
+  - Comparações médias: 1472.16
+  - Tempo médio total: 282218.56 ms (4.70 minutos)
+  MULTIPLICACAO:
+  - Tempo médio inserção: 620093.22 ms (10.33 minutos)
+  - Colisões médias: 8629667
+  - Tempo médio busca: 0.22 ms
+  - Comparações médias: 1454.67
+  - Tempo médio total: 620093.44 ms (10.33 minutos)
+  DOBRAMENTO:
+  - Tempo médio inserção: 269100.22 ms (4.49 minutos)
+  - Colisões médias: 8664428
+  - Tempo médio busca: 0.11 ms
+  - Comparações médias: 2839.80
+  - Tempo médio total: 269100.33 ms (4.49 minutos)
+
+MÉDIAS POR TAMANHO DE TABELA:
+
+Rehashing:
+  DIVISAO:
+    Tamanho 1000:
+      - Tempo médio inserção: 0.00 ms
+      - Colisões médias: 492
+      - Tempo médio busca: 0.00 ms
+      - Comparações médias: 2.47
+    Tamanho 10000:
+      - Tempo médio inserção: 2.33 ms
+      - Colisões médias: 4969
+      - Tempo médio busca: 0.00 ms
+      - Comparações médias: 27.53
+    Tamanho 100000:
+      - Tempo médio inserção: 57.00 ms
+      - Colisões médias: 50035
+      - Tempo médio busca: 0.00 ms
+      - Comparações médias: 9.73
+  MULTIPLICACAO:
+    Tamanho 1000:
+      - Tempo médio inserção: 0.00 ms
+      - Colisões médias: 502
+      - Tempo médio busca: 0.00 ms
+      - Comparações médias: 2.93
+    Tamanho 10000:
+      - Tempo médio inserção: 2.00 ms
+      - Colisões médias: 5052
+      - Tempo médio busca: 0.00 ms
+      - Comparações médias: 23.13
+    Tamanho 100000:
+      - Tempo médio inserção: 57.33 ms
+      - Colisões médias: 50044
+      - Tempo médio busca: 0.00 ms
+      - Comparações médias: 34.93
+  DOBRAMENTO:
+    Tamanho 1000:
+      - Tempo médio inserção: 3.00 ms
+      - Colisões médias: 498
+      - Tempo médio busca: 0.00 ms
+      - Comparações médias: 3.80
+    Tamanho 10000:
+      - Tempo médio inserção: 113.67 ms
+      - Colisões médias: 8943
+      - Tempo médio busca: 0.67 ms
+      - Comparações médias: 4943.53
+    Tamanho 100000:
+      - Tempo médio inserção: 13695.33 ms (13.70 segundos)
+      - Colisões médias: 98859
+      - Tempo médio busca: 1.67 ms
+      - Comparações médias: 59084.93
+
+Encadeamento:
+  DIVISAO:
+    Tamanho 1000:
+      - Tempo médio inserção: 571717.67 ms (9.53 minutos)
+      - Colisões médias: 8665667
+      - Tempo médio busca: 0.00 ms
+      - Comparações médias: 3983.13
+    Tamanho 10000:
+      - Tempo médio inserção: 238757.00 ms (3.98 minutos)
+      - Colisões médias: 8656667
+      - Tempo médio busca: 0.00 ms
+      - Comparações médias: 395.67
+    Tamanho 100000:
+      - Tempo médio inserção: 36181.00 ms (36.18 segundos)
+      - Colisões médias: 8566668
+      - Tempo médio busca: 0.00 ms
+      - Comparações médias: 37.67
+  MULTIPLICACAO:
+    Tamanho 1000:
+      - Tempo médio inserção: 1621966.33 ms (27.03 minutos)
+      - Colisões médias: 8665667
+      - Tempo médio busca: 0.33 ms
+      - Comparações médias: 3938.20
+    Tamanho 10000:
+      - Tempo médio inserção: 217622.67 ms (3.63 minutos)
+      - Colisões médias: 8656667
+      - Tempo médio busca: 0.33 ms
+      - Comparações médias: 386.60
+    Tamanho 100000:
+      - Tempo médio inserção: 20690.67 ms (20.69 segundos)
+      - Colisões médias: 8566667
+      - Tempo médio busca: 0.00 ms
+      - Comparações médias: 39.20
+  DOBRAMENTO:
+    Tamanho 1000:
+      - Tempo médio inserção: 355703.00 ms (5.93 minutos)
+      - Colisões médias: 8665667
+      - Tempo médio busca: 0.33 ms
+      - Comparações médias: 3962.73
+    Tamanho 10000:
+      - Tempo médio inserção: 227556.67 ms (3.79 minutos)
+      - Colisões médias: 8663809
+      - Tempo médio busca: 0.00 ms
+      - Comparações médias: 2278.33
+    Tamanho 100000:
+      - Tempo médio inserção: 224041.00 ms (3.73 minutos)
+      - Colisões médias: 8663809
+      - Tempo médio busca: 0.00 ms
+      - Comparações médias: 2278.33
